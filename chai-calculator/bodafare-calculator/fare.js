@@ -1,14 +1,14 @@
-const baseFare= KES50;
-const chargePerKm= KES15;
+const baseFare= 50;
+const chargePerKm= 15;
 function calculateBodaFare(){
 let distance= prompt("Unafika wapi Mkubwa? Kilometer ngapi?");
     let distanceInKm= Number(distance);
     let totalFare = baseFare + (distanceInKm * chargePerKm);
 
-    console.log("Uko kwote? Io ni ${distance} Km:");
-    console.log("Ukikalia pikipiki: ${baseFare}");
-    console.log("Mpaka uko: ${distanceInKm * chargePerKm}");
-    console.log("Total: ${totalFare}");
-    console.log("Panda pikipiki!")
+    console.log(`Uko kwote? Io ni ${distance} Km:`);
+    console.log(`Ukikalia pikipiki: KES ${baseFare}`);
+    console.log(`Mpaka uko: KES ${distanceInKm * chargePerKm}`);
+    console.log(`Total: KES ${totalFare}`);
+    console.log(`Panda pikipiki!`)
 }
 calculateBodaFare()
